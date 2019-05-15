@@ -1,9 +1,7 @@
 using Gtk, GtkExtensions
 
-function init!(window::MainWindow, menuBar)
-	window.menuBar = menuBar
+function init!(window::MainWindow)
 	window.currentProject = Project()
-	initViews(window)
-	push!(window, menuBar)
+	initViews(window, window.box)
 	showall(window)
 end

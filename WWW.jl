@@ -2,17 +2,17 @@ module WWW
 
 using Gtk, GtkExtensions, Serialization
 
-include("MainWindow.jl")
-include("MainMenu.jl")
-include("Project.jl")
 include("View.jl")
+include("Project.jl")
+include("MainMenu.jl")
+include("MainWindow.jl")
 
 include("init.jl")
 
 function __init__()
 	global debug = true
 	win = MainWindow()
-	init!(win, MainMenu(win))
+	init!(win)
 
 	if !isinteractive()
 		c = Condition()

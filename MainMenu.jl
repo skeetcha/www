@@ -9,6 +9,28 @@ function newProject(widgetptr::Ptr, user_data)
 	return nothing
 end
 
+function newLang(widgetptr::Ptr, user_data)
+	if debug
+		println("Creating a new language...")
+	end
+
+	window = user_data
+	# Create a language
+
+	return nothing
+end
+
+function newSystem(widgetptr::Ptr, user_data)
+	if debug
+		println("Creating a new planetary system...")
+	end
+
+	window = user_data
+	# Create a planetary system
+
+	return nothing
+end
+
 function openProject(widgetptr::Ptr, user_data)
 	if debug
 		println("Opening a project...")
@@ -17,6 +39,28 @@ function openProject(widgetptr::Ptr, user_data)
 	window = user_data
 	projectFile = open_dialog("Open project", window, ("*.wp",))
 	window.currentProject = deserialize(projectFile)
+
+	return nothing
+end
+
+function openLang(widgetptr::Ptr, user_data) # This might be changed to Import Language
+	if debug
+		println("Opening a language...")
+	end
+
+	window = user_data
+	# Open the language
+
+	return nothing
+end
+
+function openSystem(widgetptr::Ptr, user_data) # This might be changed to Import System
+	if debug
+		println("Opening a planetary system...")
+	end
+
+	window = user_data
+	# Open the planetary system
 
 	return nothing
 end
@@ -45,7 +89,7 @@ function quitApp(widgetptr::Ptr, user_data)
 	return nothing
 end
 
-function addIssue(widgetptr::Ptr, user_data)
+function openIssue(widgetptr::Ptr, user_data)
 	if debug
 		println("Redirecting to the issues page...")
 	end
@@ -55,7 +99,7 @@ function addIssue(widgetptr::Ptr, user_data)
 	return nothing
 end
 
-function about(widgetptr::Ptr, user_data)
+function openAbout(widgetptr::Ptr, user_data)
 	if debug
 		println("Display about info...")
 	end
@@ -66,44 +110,15 @@ Coded and Created by Daniel Unterholzner")
 	return nothing
 end
 
-function MainMenu(window::MainWindow)
-	menuBar = GtkMenuBar() |>
-		(fileMenu = GtkMenuItem("_File")) |>
-		(toolsMenu = GtkMenuItem("_Tools")) |>
-		(helpMenu = GtkMenuItem("_Help"))
-
-	# File Menu
-	buildmenu(
-		[
-			MenuItem("New Project", newProject),
-			MenuItem("Open Project", openProject),
-			MenuItem("Save Project", saveProject),
-			GtkSeparatorMenuItem,
-			MenuItem("Quit", quitApp)
-		],
-		fileMenu,
-		(window)
-	)
-
-	# Tools Menu
-	#buildmenu(
-	#	[
-	#		# ?
-	#	],
-	#	toolsMenu,
-	#	(window)
-	#)
-
-	# Help Menu
-	buildmenu(
-		[
-			MenuItem("Issue", addIssue),
-			GtkSeparatorMenuItem,
-			MenuItem("About", about)
-		],
-		helpMenu,
-		(window)
-	)
-
-	return menuBar
+function setupSignals(builder::GtkBuilder)
+	newProjectId = signal_connect(newProject, builder["newProjectMi"], "activate")
+	newLangId = signal_connect(newLang, builder["newLangMi"], "activate")
+	newSystemId = signal_connect(newSystem, builder["newSystemMi"], "activate")
+	openProjectId = signal_connect(openProject, builder["openProjectMi"], "activate")
+	openLangId = signal_connect(openLang, builder["openLangMi"], "activate")
+	openSystemId = signal_connect(openSystem, builder["openSystemMi"], "activate")
+	#saveProjectId = signal_connect(saveProject, builder["saveProjectMi"], "activate")
+	quitAppId = signal_connect(quitApp, builder["quitMi"], "activate")
+	openIssueId = signal_connect(openIssue, builder["issuesMi"], "activate")
+	openAboutId = signal_connect(openAbout, builder["aboutMi"], "activate")
 end

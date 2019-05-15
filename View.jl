@@ -1,11 +1,9 @@
 mutable struct View
 	grid::GtkGrid
 
-	function View(window::MainWindow)
+	function View()
 		g = GtkGrid()
 		n = new(g)
-		push!(window, g)
-		push!(window.views, g)
 	end
 end
 
