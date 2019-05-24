@@ -70,40 +70,51 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkMenuItem" id="openMi">
+                      <object class="GtkMenuItem" id="openProjectMi">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="label" translatable="yes">_Open...</property>
+                        <property name="label" translatable="yes">_Open Project</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="saveMi">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">_Save Project</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="separator1">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="importMi">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">_Import...</property>
                         <property name="use_underline">True</property>
                         <child type="submenu">
-                          <object class="GtkMenu" id="openMenu">
+                          <object class="GtkMenu" id="importMenu">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
                             <child>
-                              <object class="GtkMenuItem" id="openProjectMi">
+                              <object class="GtkMenuItem" id="importLangMi">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Open _Project</property>
+                                <property name="label" translatable="yes">Import _Language</property>
                                 <property name="use_underline">True</property>
-                                <signal name="activate" handler="openProject" object="window" swapped="no"/>
                               </object>
                             </child>
                             <child>
-                              <object class="GtkMenuItem" id="openLangMi">
+                              <object class="GtkMenuItem" id="importSystemMi">
                                 <property name="visible">True</property>
                                 <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Open _Language</property>
+                                <property name="label" translatable="yes">Import _System</property>
                                 <property name="use_underline">True</property>
-                                <signal name="activate" handler="openLang" object="window" swapped="no"/>
-                              </object>
-                            </child>
-                            <child>
-                              <object class="GtkMenuItem" id="openSystemMi">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                                <property name="label" translatable="yes">Open _System</property>
-                                <property name="use_underline">True</property>
-                                <signal name="activate" handler="openSystem" object="window" swapped="no"/>
                               </object>
                             </child>
                           </object>
@@ -111,7 +122,37 @@
                       </object>
                     </child>
                     <child>
-                      <object class="GtkSeparatorMenuItem" id="separator1">
+                      <object class="GtkMenuItem" id="exportMi">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">_Export...</property>
+                        <property name="use_underline">True</property>
+                        <child type="submenu">
+                          <object class="GtkMenu" id="exportMenu">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <child>
+                              <object class="GtkMenuItem" id="exportLangMi">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Export _Language</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkMenuItem" id="exportSystemMi">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="label" translatable="yes">Export _System</property>
+                                <property name="use_underline">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="separator2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                       </object>
@@ -123,6 +164,40 @@
                         <property name="label" translatable="yes">_Quit</property>
                         <property name="use_underline">True</property>
                         <signal name="activate" handler="quitApp" object="window" swapped="no"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="viewsMi">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="label" translatable="yes">_Switch Views</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="viewsMenu">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="langViewMi">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">_Language</property>
+                        <property name="use_underline">True</property>
+                        <property name="draw_as_radio">True</property>
+                        <property name="group">systemViewMi</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkRadioMenuItem" id="systemViewMi">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="label" translatable="yes">_System</property>
+                        <property name="use_underline">True</property>
+                        <property name="draw_as_radio">True</property>
+                        <property name="group">langViewMi</property>
                       </object>
                     </child>
                   </object>

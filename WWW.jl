@@ -1,6 +1,8 @@
 module WWW
 
-using Gtk, GtkExtensions, Serialization
+using Gtk, GtkExtensions, Serialization, PortAudio
+
+include("ConlangView.jl")
 
 include("View.jl")
 include("Project.jl")
@@ -11,12 +13,12 @@ include("init.jl")
 
 function __init__()
 	global debug = true
-	win = MainWindow()
-	init!(win)
+	global window = MainWindow()
+	init!(window)
 
 	if !isinteractive()
 		c = Condition()
-		signal_connect(win, :destroy) do widget
+		signal_connect(window, :destroy) do widget
 			notify(c)
 		end
 		wait(c)
