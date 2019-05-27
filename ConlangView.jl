@@ -17,8 +17,8 @@ end
 function setupIPATableSignals(builder::GtkBuilder)
 	# Nasals
 	voicelessBilabialNasalId = signal_connect(playSoundFile, builder["bilabial_nasal_unvoiced"], :clicked)
-	voicedBilabialNasalId = signal_connect(voicedBilabialNasal, builder["bilabial_nasal_voiced"], :clicked)
-	voicedLabiodentalNasalId = signal_connect(voicedLabiodentalNasal, builder["labiodental_nasal_voiced"], :clicked)
+	voicedBilabialNasalId = signal_connect(playSoundFile, builder["bilabial_nasal_voiced"], :clicked)
+	voicedLabiodentalNasalId = signal_connect(playSoundFile, builder["labiodental_nasal_voiced"], :clicked)
 end
 
 function ipaTable(widgetptr)
@@ -26,16 +26,15 @@ function ipaTable(widgetptr)
 		println("Opening IPA table...")
 	end
 
-	b = GtkBuidler(filename="forms/ipatable.glade")
-	w = b["window"]
+	b = GtkBuilder(filename="forms/ipatable.glade")
 
 	setupIPATableSignals(b)
 
-	showall(w)
+	showall(b["ipatable"])
 
 	if !isinteractive()
 		ipac = Condition()
-		signal_connect(w, :destroy) do widget
+		signal_connect(b["ipatable"], :destroy) do widget
 			notify(ipac)
 		end
 		wait(ipac)

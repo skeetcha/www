@@ -1,6 +1,6 @@
 module WWW
 
-using Gtk, GtkExtensions, Serialization, PortAudio
+using Gtk, Serialization#, PortAudio
 
 include("ConlangView.jl")
 

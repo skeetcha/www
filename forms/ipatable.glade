@@ -1,30 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <object class="GtkWindow" id="window">
+  <object class="GtkWindow" id="ipatable">
     <property name="can_focus">False</property>
     <property name="default_width">1000</property>
     <property name="default_height">500</property>
     <child>
-      <placeholder/>
-    </child>
-    <child>
-      <object class="GtkBox" id="box">
+      <object class="GtkBox" id="ipabox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="margin_left">10</property>
         <property name="margin_right">10</property>
         <property name="spacing">10</property>
         <child>
-          <object class="GtkGrid" id="pulm_con_grid"> <!-- Pulmonic Consonants -->
+          <object class="GtkGrid" id="pulm_con_grid">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="margin_top">50</property>
             <property name="margin_bottom">50</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
-            <child> <!-- Voiceless Bilabial Nasal -->
+            <child>
               <object class="GtkButton" id="bilabial_nasal_unvoiced">
                 <property name="label" translatable="yes">m̥</property>
                 <property name="visible">True</property>
@@ -34,9 +30,11 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Bilabial Nasal -->
+            <child>
               <object class="GtkButton" id="bilabial_nasal_voiced">
                 <property name="label" translatable="yes">m</property>
                 <property name="visible">True</property>
@@ -46,9 +44,11 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Labiodental Nasal -->
+            <child>
               <object class="GtkButton" id="labiodental_nasal_voiced">
                 <property name="label" translatable="yes">ɱ</property>
                 <property name="visible">True</property>
@@ -58,9 +58,11 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Linguolabial Nasal -->
+            <child>
               <object class="GtkButton" id="linguolabial_nasal_voiced">
                 <property name="label" translatable="yes">n̼</property>
                 <property name="visible">True</property>
@@ -70,9 +72,11 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voicless Bilabial Stop -->
+            <child>
               <object class="GtkButton" id="bilabial_stop_unvoiced">
                 <property name="label" translatable="yes">p</property>
                 <property name="visible">True</property>
@@ -82,9 +86,11 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Bilabial Stop -->
+            <child>
               <object class="GtkButton" id="bilabial_stop_voiced">
                 <property name="label" translatable="yes">b</property>
                 <property name="visible">True</property>
@@ -94,9 +100,11 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Labiodental Stop -->
+            <child>
               <object class="GtkButton" id="labiodental_stop_unvoiced">
                 <property name="label" translatable="yes">p̪</property>
                 <property name="visible">True</property>
@@ -106,9 +114,11 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Labiodental Stop -->
+            <child>
               <object class="GtkButton" id="labiodental_stop_voiced">
                 <property name="label" translatable="yes">b̪</property>
                 <property name="visible">True</property>
@@ -118,9 +128,11 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Linguolabial Stop -->
+            <child>
               <object class="GtkButton" id="linguolabial_stop_unvoiced">
                 <property name="label" translatable="yes">t̼</property>
                 <property name="visible">True</property>
@@ -130,9 +142,11 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Linguolabial Stop -->
+            <child>
               <object class="GtkButton" id="linguolabial_stop_voiced">
                 <property name="label" translatable="yes">d̼</property>
                 <property name="visible">True</property>
@@ -142,9 +156,11 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Nasal -->
+            <child>
               <object class="GtkButton" id="alveolar_nasal_voiced">
                 <property name="label" translatable="yes">n</property>
                 <property name="visible">True</property>
@@ -154,9 +170,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Nasal -->
+            <child>
               <object class="GtkButton" id="alveolar_nasal_unvoiced">
                 <property name="label" translatable="yes">n̥</property>
                 <property name="visible">True</property>
@@ -166,9 +184,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Nasal -->
+            <child>
               <object class="GtkButton" id="uvular_nasal_voiced">
                 <property name="label" translatable="yes">ɴ</property>
                 <property name="visible">True</property>
@@ -178,9 +198,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Nasal -->
+            <child>
               <object class="GtkButton" id="velar_nasal_voiced">
                 <property name="label" translatable="yes">ŋ</property>
                 <property name="visible">True</property>
@@ -190,9 +212,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Nasal -->
+            <child>
               <object class="GtkButton" id="velar_nasal_unvoiced">
                 <property name="label" translatable="yes">ŋ̊</property>
                 <property name="visible">True</property>
@@ -202,9 +226,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Nasal -->
+            <child>
               <object class="GtkButton" id="palatal_nasal_voiced">
                 <property name="label" translatable="yes">ɲ</property>
                 <property name="visible">True</property>
@@ -214,9 +240,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Nasal -->
+            <child>
               <object class="GtkButton" id="palatal_nasal_unvoiced">
                 <property name="label" translatable="yes">ɲ̊</property>
                 <property name="visible">True</property>
@@ -226,9 +254,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Nasal -->
+            <child>
               <object class="GtkButton" id="retroflex_nasal_voiced">
                 <property name="label" translatable="yes">ɳ</property>
                 <property name="visible">True</property>
@@ -238,9 +268,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Nasal -->
+            <child>
               <object class="GtkButton" id="retroflex_nasal_unvoiced">
                 <property name="label" translatable="yes">ɳ̊</property>
                 <property name="visible">True</property>
@@ -250,9 +282,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Stop -->
+            <child>
               <object class="GtkButton" id="alveolar_stop_unvoiced">
                 <property name="label" translatable="yes">t</property>
                 <property name="visible">True</property>
@@ -262,9 +296,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Stop -->
+            <child>
               <object class="GtkButton" id="alveolar_stop_voiced">
                 <property name="label" translatable="yes">d</property>
                 <property name="visible">True</property>
@@ -274,9 +310,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Stop -->
+            <child>
               <object class="GtkButton" id="retroflex_stop_unvoiced">
                 <property name="label" translatable="yes">ʈ</property>
                 <property name="visible">True</property>
@@ -286,9 +324,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Stop -->
+            <child>
               <object class="GtkButton" id="retroflex_stop_voiced">
                 <property name="label" translatable="yes">ɖ</property>
                 <property name="visible">True</property>
@@ -298,9 +338,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Stop -->
+            <child>
               <object class="GtkButton" id="palatal_stop_unvoiced">
                 <property name="label" translatable="yes">c</property>
                 <property name="visible">True</property>
@@ -310,9 +352,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Stop -->
+            <child>
               <object class="GtkButton" id="palatal_stop_voiced">
                 <property name="label" translatable="yes">ɟ</property>
                 <property name="visible">True</property>
@@ -322,9 +366,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Stop -->
+            <child>
               <object class="GtkButton" id="velar_stop_unvoiced">
                 <property name="label" translatable="yes">k</property>
                 <property name="visible">True</property>
@@ -334,9 +380,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Stop -->
+            <child>
               <object class="GtkButton" id="velar_stop_voiced">
                 <property name="label" translatable="yes">g</property>
                 <property name="visible">True</property>
@@ -346,9 +394,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Uvular Stop -->
+            <child>
               <object class="GtkButton" id="uvular_stop_unvoiced">
                 <property name="label" translatable="yes">q</property>
                 <property name="visible">True</property>
@@ -358,9 +408,11 @@
               <packing>
                 <property name="left_attach">18</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Stop -->
+            <child>
               <object class="GtkButton" id="uvular_stop_voiced">
                 <property name="label" translatable="yes">ɢ</property>
                 <property name="visible">True</property>
@@ -370,9 +422,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Pharyngeal Stop -->
+            <child>
               <object class="GtkButton" id="pharyngeal_stop_unvoiced">
                 <property name="label" translatable="yes">ʡ</property>
                 <property name="visible">True</property>
@@ -382,9 +436,11 @@
               <packing>
                 <property name="left_attach">20</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Glottal Stop -->
+            <child>
               <object class="GtkButton" id="glottal_stop_unvoiced">
                 <property name="label" translatable="yes">ʔ</property>
                 <property name="visible">True</property>
@@ -394,9 +450,11 @@
               <packing>
                 <property name="left_attach">22</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voicless Alveolar Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_sibfricative_unvoiced">
                 <property name="label" translatable="yes">s</property>
                 <property name="visible">True</property>
@@ -406,9 +464,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_sibfricative_voiced">
                 <property name="label" translatable="yes">z</property>
                 <property name="visible">True</property>
@@ -418,9 +478,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Post-Alveolar Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="postalveolar_sibfricative_unvoiced">
                 <property name="label" translatable="yes">ʃ</property>
                 <property name="visible">True</property>
@@ -430,9 +492,11 @@
               <packing>
                 <property name="left_attach">10</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Post-Alveolar Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="postalveolar_sibfricative_voiced">
                 <property name="label" translatable="yes">ʒ</property>
                 <property name="visible">True</property>
@@ -442,9 +506,11 @@
               <packing>
                 <property name="left_attach">11</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="retroflex_sibfricative_unvoiced">
                 <property name="label" translatable="yes">ʂ</property>
                 <property name="visible">True</property>
@@ -454,9 +520,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="retroflex_sibfricative_voiced">
                 <property name="label" translatable="yes">ʐ</property>
                 <property name="visible">True</property>
@@ -466,9 +534,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_sibfricative_unvoiced">
                 <property name="label" translatable="yes">ɕ</property>
                 <property name="visible">True</property>
@@ -478,9 +548,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_sibfricative_voiced">
                 <property name="label" translatable="yes">ʑ</property>
                 <property name="visible">True</property>
@@ -490,9 +562,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Bilabial Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="bilabial_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">ɸ</property>
                 <property name="visible">True</property>
@@ -502,9 +576,11 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Bilabial Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="bilabial_nonsibfricative_voiced">
                 <property name="label" translatable="yes">β</property>
                 <property name="visible">True</property>
@@ -514,9 +590,11 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Labiodental Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="labiodental_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">f</property>
                 <property name="visible">True</property>
@@ -526,9 +604,11 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Labiodental Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="labiodental_nonsibfricative_voiced">
                 <property name="label" translatable="yes">v</property>
                 <property name="visible">True</property>
@@ -538,9 +618,11 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Linguolabial Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="linguolabial_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">θ̼</property>
                 <property name="visible">True</property>
@@ -550,9 +632,11 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Linguolabial Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="linguolabial_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ð̼</property>
                 <property name="visible">True</property>
@@ -562,9 +646,11 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Dental Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="dental_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">θ</property>
                 <property name="visible">True</property>
@@ -574,9 +660,11 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Dental Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="dental_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ð</property>
                 <property name="visible">True</property>
@@ -586,9 +674,11 @@
               <packing>
                 <property name="left_attach">7</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">θ̠ </property>
                 <property name="visible">True</property>
@@ -598,9 +688,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ð̠</property>
                 <property name="visible">True</property>
@@ -610,9 +702,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Post-alveolar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="postalveolar_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">ɹ̠̊˔</property>
                 <property name="visible">True</property>
@@ -622,9 +716,11 @@
               <packing>
                 <property name="left_attach">10</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Post-alveolar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="postalveolar_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ɹ̠˔</property>
                 <property name="visible">True</property>
@@ -634,9 +730,11 @@
               <packing>
                 <property name="left_attach">11</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="retroflex_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ɻ˔</property>
                 <property name="visible">True</property>
@@ -646,9 +744,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">ç</property>
                 <property name="visible">True</property>
@@ -658,9 +758,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ʝ</property>
                 <property name="visible">True</property>
@@ -670,9 +772,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="velar_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">x</property>
                 <property name="visible">True</property>
@@ -682,9 +786,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="velar_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ɣ</property>
                 <property name="visible">True</property>
@@ -694,9 +800,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Uvular Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="uvular_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">χ</property>
                 <property name="visible">True</property>
@@ -706,9 +814,11 @@
               <packing>
                 <property name="left_attach">18</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="uvular_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ʁ</property>
                 <property name="visible">True</property>
@@ -718,9 +828,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Pharyngeal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="pharyngeal_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">ħ</property>
                 <property name="visible">True</property>
@@ -730,9 +842,11 @@
               <packing>
                 <property name="left_attach">20</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Pharyngeal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="pharyngeal_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ʕ</property>
                 <property name="visible">True</property>
@@ -742,9 +856,11 @@
               <packing>
                 <property name="left_attach">21</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Glottal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="glottal_nonsibfricative_unvoiced">
                 <property name="label" translatable="yes">h</property>
                 <property name="visible">True</property>
@@ -754,9 +870,11 @@
               <packing>
                 <property name="left_attach">22</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Glottal Non-sibilant Fricative -->
+            <child>
               <object class="GtkButton" id="glottal_nonsibfricative_voiced">
                 <property name="label" translatable="yes">ɦ</property>
                 <property name="visible">True</property>
@@ -766,9 +884,11 @@
               <packing>
                 <property name="left_attach">23</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Labiodental Approximant -->
+            <child>
               <object class="GtkButton" id="labiodental_approximant_unvoiced">
                 <property name="label" translatable="yes">ʋ̥</property>
                 <property name="visible">True</property>
@@ -778,9 +898,11 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Labiodental Approximant -->
+            <child>
               <object class="GtkButton" id="labiodental_approximant_voiced">
                 <property name="label" translatable="yes">ʋ</property>
                 <property name="visible">True</property>
@@ -790,9 +912,11 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Approximant -->
+            <child>
               <object class="GtkButton" id="alveolar_approximant_unvoiced">
                 <property name="label" translatable="yes">ɹ̥</property>
                 <property name="visible">True</property>
@@ -802,9 +926,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Approximant -->
+            <child>
               <object class="GtkButton" id="alveolar_approximant_voiced">
                 <property name="label" translatable="yes">ɹ</property>
                 <property name="visible">True</property>
@@ -814,9 +940,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Approximant -->
+            <child>
               <object class="GtkButton" id="retroflex_approximant_unvoiced">
                 <property name="label" translatable="yes">ɻ̊</property>
                 <property name="visible">True</property>
@@ -826,9 +954,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Approximant -->
+            <child>
               <object class="GtkButton" id="retroflex_approximant_voiced">
                 <property name="label" translatable="yes">ɻ</property>
                 <property name="visible">True</property>
@@ -838,9 +968,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Approximant -->
+            <child>
               <object class="GtkButton" id="palatal_approximant_unvoiced">
                 <property name="label" translatable="yes">j̊</property>
                 <property name="visible">True</property>
@@ -850,9 +982,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Approximant -->
+            <child>
               <object class="GtkButton" id="palatal_approximant_voiced">
                 <property name="label" translatable="yes">j</property>
                 <property name="visible">True</property>
@@ -862,9 +996,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Approximant -->
+            <child>
               <object class="GtkButton" id="velar_approximant_unvoiced">
                 <property name="label" translatable="yes">ɰ̊</property>
                 <property name="visible">True</property>
@@ -874,9 +1010,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Approximant -->
+            <child>
               <object class="GtkButton" id="velar_approximant_voiced">
                 <property name="label" translatable="yes">ɰ</property>
                 <property name="visible">True</property>
@@ -886,9 +1024,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Glottal Approximant -->
+            <child>
               <object class="GtkButton" id="glottal_approximant_voiced">
                 <property name="label" translatable="yes">ʔ̞</property>
                 <property name="visible">True</property>
@@ -898,9 +1038,11 @@
               <packing>
                 <property name="left_attach">23</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Bilabial Tap -->
+            <child>
               <object class="GtkButton" id="bilabial_tap_voiced">
                 <property name="label" translatable="yes">ⱱ̟</property>
                 <property name="visible">True</property>
@@ -910,9 +1052,11 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Labiodental Tap -->
+            <child>
               <object class="GtkButton" id="labiodental_tap_voiced">
                 <property name="label" translatable="yes">ⱱ</property>
                 <property name="visible">True</property>
@@ -922,9 +1066,11 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Linguolabial Tap -->
+            <child>
               <object class="GtkButton" id="linguolabial_tap_voiced">
                 <property name="label" translatable="yes">ɾ̼</property>
                 <property name="visible">True</property>
@@ -934,9 +1080,11 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Tap -->
+            <child>
               <object class="GtkButton" id="alveolar_tap_unvoiced">
                 <property name="label" translatable="yes">ɾ̥</property>
                 <property name="visible">True</property>
@@ -946,9 +1094,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Tap -->
+            <child>
               <object class="GtkButton" id="alveolar_tap_voiced">
                 <property name="label" translatable="yes">ɾ</property>
                 <property name="visible">True</property>
@@ -958,9 +1108,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Tap -->
+            <child>
               <object class="GtkButton" id="retroflex_tap_unvoiced">
                 <property name="label" translatable="yes">ɽ̊</property>
                 <property name="visible">True</property>
@@ -970,9 +1122,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Tap -->
+            <child>
               <object class="GtkButton" id="retroflex_tap_voiced">
                 <property name="label" translatable="yes">ɽ</property>
                 <property name="visible">True</property>
@@ -982,9 +1136,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Tap -->
+            <child>
               <object class="GtkButton" id="uvular_tap_voiced">
                 <property name="label" translatable="yes">ɢ̆</property>
                 <property name="visible">True</property>
@@ -994,9 +1150,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Pharyngeal Tap -->
+            <child>
               <object class="GtkButton" id="pharyngeal_tap_voiced">
                 <property name="label" translatable="yes">ʡ̆</property>
                 <property name="visible">True</property>
@@ -1006,9 +1164,11 @@
               <packing>
                 <property name="left_attach">21</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Bilabial Trill -->
+            <child>
               <object class="GtkButton" id="bilabial_trill_unvoiced">
                 <property name="label" translatable="yes">ʙ̥</property>
                 <property name="visible">True</property>
@@ -1018,9 +1178,11 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Bilabial Trill -->
+            <child>
               <object class="GtkButton" id="bilabial_trill_voiced">
                 <property name="label" translatable="yes">ʙ</property>
                 <property name="visible">True</property>
@@ -1030,9 +1192,11 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Trill -->
+            <child>
               <object class="GtkButton" id="alveolar_trill_unvoiced">
                 <property name="label" translatable="yes">r̥</property>
                 <property name="visible">True</property>
@@ -1042,9 +1206,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Trill -->
+            <child>
               <object class="GtkButton" id="alveolar_trill_voiced">
                 <property name="label" translatable="yes">r</property>
                 <property name="visible">True</property>
@@ -1054,9 +1220,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Uvular Trill -->
+            <child>
               <object class="GtkButton" id="uvular_trill_unvoiced">
                 <property name="label" translatable="yes">ʀ̥</property>
                 <property name="visible">True</property>
@@ -1066,9 +1234,11 @@
               <packing>
                 <property name="left_attach">18</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Trill -->
+            <child>
               <object class="GtkButton" id="uvular_trill_voiced">
                 <property name="label" translatable="yes">ʀ</property>
                 <property name="visible">True</property>
@@ -1078,9 +1248,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Pharyngeal Trill -->
+            <child>
               <object class="GtkButton" id="pharyngeal_trill_unvoiced">
                 <property name="label" translatable="yes">ʜ</property>
                 <property name="visible">True</property>
@@ -1090,9 +1262,11 @@
               <packing>
                 <property name="left_attach">20</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Pharyngeal Trill -->
+            <child>
               <object class="GtkButton" id="pharyngeal_trill_voiced">
                 <property name="label" translatable="yes">ʢ</property>
                 <property name="visible">True</property>
@@ -1102,9 +1276,11 @@
               <packing>
                 <property name="left_attach">21</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_latfricative_unvoiced">
                 <property name="label" translatable="yes">ɬ</property>
                 <property name="visible">True</property>
@@ -1114,9 +1290,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="alveolar_latfricative_voiced">
                 <property name="label" translatable="yes">ɮ</property>
                 <property name="visible">True</property>
@@ -1126,9 +1304,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="retroflex_latfricative_unvoiced">
                 <property name="label" translatable="yes">ɭ̊˔</property>
                 <property name="visible">True</property>
@@ -1138,9 +1318,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="retroflex_latfricative_voiced">
                 <property name="label" translatable="yes">ɭ˔</property>
                 <property name="visible">True</property>
@@ -1150,9 +1332,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_latfricative_unvoiced">
                 <property name="label" translatable="yes">ʎ̝̊</property>
                 <property name="visible">True</property>
@@ -1162,9 +1346,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="palatal_latfricative_voiced">
                 <property name="label" translatable="yes">ʎ̝</property>
                 <property name="visible">True</property>
@@ -1174,9 +1360,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="velar_latfricative_unvoiced">
                 <property name="label" translatable="yes">ʟ̝̊</property>
                 <property name="visible">True</property>
@@ -1186,9 +1374,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Lateral Fricative -->
+            <child>
               <object class="GtkButton" id="velar_latfricative_voiced">
                 <property name="label" translatable="yes">ʟ̝</property>
                 <property name="visible">True</property>
@@ -1198,9 +1388,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Alveolar Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="alveolar_latapproximant_unvoiced">
                 <property name="label" translatable="yes">l̥</property>
                 <property name="visible">True</property>
@@ -1210,9 +1402,11 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="alveolar_latapproximant_voiced">
                 <property name="label" translatable="yes">l</property>
                 <property name="visible">True</property>
@@ -1222,9 +1416,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Retroflex Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="retroflex_latapproximant_unvoiced">
                 <property name="label" translatable="yes">ɭ̊</property>
                 <property name="visible">True</property>
@@ -1234,9 +1430,11 @@
               <packing>
                 <property name="left_attach">12</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="retroflex_latapproximant_voiced">
                 <property name="label" translatable="yes">ɭ</property>
                 <property name="visible">True</property>
@@ -1246,9 +1444,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Palatal Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="palatal_latapproximant_unvoiced">
                 <property name="label" translatable="yes">ʎ̥</property>
                 <property name="visible">True</property>
@@ -1258,9 +1458,11 @@
               <packing>
                 <property name="left_attach">14</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="palatal_latapproximant_voiced">
                 <property name="label" translatable="yes">ʎ</property>
                 <property name="visible">True</property>
@@ -1270,9 +1472,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiceless Velar Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="velar_latapproximant_unvoiced">
                 <property name="label" translatable="yes">ʟ̥</property>
                 <property name="visible">True</property>
@@ -1282,9 +1486,11 @@
               <packing>
                 <property name="left_attach">16</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="velar_latapproximant_voiced">
                 <property name="label" translatable="yes">ʟ</property>
                 <property name="visible">True</property>
@@ -1294,9 +1500,11 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Uvular Lateral Approximant -->
+            <child>
               <object class="GtkButton" id="uvular_latapproximant_voiced">
                 <property name="label" translatable="yes">ʟ̠</property>
                 <property name="visible">True</property>
@@ -1306,9 +1514,11 @@
               <packing>
                 <property name="left_attach">19</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Alveolar Lateral Tap -->
+            <child>
               <object class="GtkButton" id="alveolar_lattap_voiced">
                 <property name="label" translatable="yes">ɺ</property>
                 <property name="visible">True</property>
@@ -1318,9 +1528,11 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Retroflex Lateral Tap -->
+            <child>
               <object class="GtkButton" id="retroflex_lattap_voiced">
                 <property name="label" translatable="yes">ɭ̆</property>
                 <property name="visible">True</property>
@@ -1330,9 +1542,11 @@
               <packing>
                 <property name="left_attach">13</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Palatal Lateral Tap -->
+            <child>
               <object class="GtkButton" id="palatal_lattap_voiced">
                 <property name="label" translatable="yes">ʎ̆</property>
                 <property name="visible">True</property>
@@ -1342,9 +1556,11 @@
               <packing>
                 <property name="left_attach">15</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
-            <child> <!-- Voiced Velar Lateral Tap -->
+            <child>
               <object class="GtkButton" id="velar_lattap_voiced">
                 <property name="label" translatable="yes">ʟ̆</property>
                 <property name="visible">True</property>
@@ -1354,6 +1570,8 @@
               <packing>
                 <property name="left_attach">17</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -1758,7 +1976,7 @@
             <property name="column_homogeneous">True</property>
             <child>
               <object class="GtkButton" id="bilabial_ejective_stop">
-                <property name="label" translatable="yes">bes</property>
+                <property name="label" translatable="yes">pʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1766,11 +1984,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_ejective_stop">
-                <property name="label" translatable="yes">aes</property>
+                <property name="label" translatable="yes">tʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1778,11 +1998,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_ejective_stop">
-                <property name="label" translatable="yes">res</property>
+                <property name="label" translatable="yes">ʈʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1790,11 +2012,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_ejective_stop">
-                <property name="label" translatable="yes">pes</property>
+                <property name="label" translatable="yes">cʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1802,11 +2026,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="velar_ejective_stop">
-                <property name="label" translatable="yes">ves</property>
+                <property name="label" translatable="yes">kʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1814,11 +2040,13 @@
               <packing>
                 <property name="left_attach">7</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="uvular_ejective_stop">
-                <property name="label" translatable="yes">ues</property>
+                <property name="label" translatable="yes">qʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1826,11 +2054,13 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="pharyngeal_ejective_stop">
-                <property name="label" translatable="yes">pes</property>
+                <property name="label" translatable="yes">ʡʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1838,11 +2068,13 @@
               <packing>
                 <property name="left_attach">9</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_ejective_fricative">
-                <property name="label" translatable="yes">bef</property>
+                <property name="label" translatable="yes">ɸʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1850,11 +2082,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="labiodental_ejective_fricative">
-                <property name="label" translatable="yes">ldef</property>
+                <property name="label" translatable="yes">fʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1862,11 +2096,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="dental_ejective_fricative">
-                <property name="label" translatable="yes">def</property>
+                <property name="label" translatable="yes">θʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1874,11 +2110,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_ejective_fricative">
-                <property name="label" translatable="yes">aef</property>
+                <property name="label" translatable="yes">sʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1886,11 +2124,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="postalveolar_ejective_fricative">
-                <property name="label" translatable="yes">paef</property>
+                <property name="label" translatable="yes">ʃʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1898,11 +2138,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_ejective_fricative">
-                <property name="label" translatable="yes">ref</property>
+                <property name="label" translatable="yes">ʂʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1910,11 +2152,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_ejective_fricative">
-                <property name="label" translatable="yes">pef</property>
+                <property name="label" translatable="yes">ɕʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1922,11 +2166,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="velar_ejective_fricative">
-                <property name="label" translatable="yes">vef</property>
+                <property name="label" translatable="yes">xʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1934,11 +2180,13 @@
               <packing>
                 <property name="left_attach">7</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="uvular_ejective_fricative">
-                <property name="label" translatable="yes">uef</property>
+                <property name="label" translatable="yes">χʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1946,11 +2194,13 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_ejective_latfricative">
-                <property name="label" translatable="yes">aelf</property>
+                <property name="label" translatable="yes">ɬʼ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1958,11 +2208,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_click_tenuis">
-                <property name="label" translatable="yes">bct</property>
+                <property name="label" translatable="yes">ʘ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1970,11 +2222,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="dental_click_tenuis">
-                <property name="label" translatable="yes">dct</property>
+                <property name="label" translatable="yes">ǀ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1982,11 +2236,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_click_tenuis">
-                <property name="label" translatable="yes">act</property>
+                <property name="label" translatable="yes">ǃ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -1994,11 +2250,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_click_tenuis">
-                <property name="label" translatable="yes">rct</property>
+                <property name="label" translatable="yes">‼</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2006,11 +2264,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_click_tenuis">
-                <property name="label" translatable="yes">pct</property>
+                <property name="label" translatable="yes">ǂ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2018,11 +2278,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_click_voiced">
-                <property name="label" translatable="yes">bcv</property>
+                <property name="label" translatable="yes">ʘ̬</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2030,11 +2292,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="dental_click_voiced">
-                <property name="label" translatable="yes">dcv</property>
+                <property name="label" translatable="yes">ǀ̬</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2042,11 +2306,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_click_voiced">
-                <property name="label" translatable="yes">acv</property>
+                <property name="label" translatable="yes">ǃ̬</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2054,11 +2320,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_click_voiced">
-                <property name="label" translatable="yes">rcv</property>
+                <property name="label" translatable="yes">‼̬</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2066,11 +2334,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_click_voiced">
-                <property name="label" translatable="yes">pcv</property>
+                <property name="label" translatable="yes">ǂ̬</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2078,11 +2348,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_click_nasal">
-                <property name="label" translatable="yes">bcn</property>
+                <property name="label" translatable="yes">ʘ̃</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2090,11 +2362,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="dental_click_nasal">
-                <property name="label" translatable="yes">dcn</property>
+                <property name="label" translatable="yes">ǀ̃</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2102,11 +2376,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_click_nasal">
-                <property name="label" translatable="yes">acn</property>
+                <property name="label" translatable="yes">ǃ̃</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2114,11 +2390,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_click_nasal">
-                <property name="label" translatable="yes">rcn</property>
+                <property name="label" translatable="yes">‼̃</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2126,11 +2404,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_click_nasal">
-                <property name="label" translatable="yes">pcn</property>
+                <property name="label" translatable="yes">ǂ̃</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2138,11 +2418,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_click_lattenuis">
-                <property name="label" translatable="yes">aclt</property>
+                <property name="label" translatable="yes">ǁ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2150,11 +2432,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_click_latvoiced">
-                <property name="label" translatable="yes">aclv</property>
+                <property name="label" translatable="yes">ǁ̬ </property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2162,11 +2446,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">7</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_implosive_voiced">
-                <property name="label" translatable="yes">biv</property>
+                <property name="label" translatable="yes">ɓ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2174,11 +2460,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_implosive_voiced">
-                <property name="label" translatable="yes">aiv</property>
+                <property name="label" translatable="yes">ɗ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2186,11 +2474,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_implosive_voiced">
-                <property name="label" translatable="yes">riv</property>
+                <property name="label" translatable="yes">ᶑ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2198,11 +2488,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_implosive_voiced">
-                <property name="label" translatable="yes">piv</property>
+                <property name="label" translatable="yes">ʄ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2210,11 +2502,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="velar_implosive_voiced">
-                <property name="label" translatable="yes">viv</property>
+                <property name="label" translatable="yes">ɠ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2222,11 +2516,13 @@
               <packing>
                 <property name="left_attach">7</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="uvular_implosive_voiced">
-                <property name="label" translatable="yes">uiv</property>
+                <property name="label" translatable="yes">ʛ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2234,11 +2530,13 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">8</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="bilabial_implosive_voiceless">
-                <property name="label" translatable="yes">biv</property>
+                <property name="label" translatable="yes">ɓ̥</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2246,11 +2544,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="alveolar_implosive_voiceless">
-                <property name="label" translatable="yes">aiv</property>
+                <property name="label" translatable="yes">ɗ̥</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2258,11 +2558,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="retroflex_implosive_voiceless">
-                <property name="label" translatable="yes">riv</property>
+                <property name="label" translatable="yes">ᶑ̊</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2270,11 +2572,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="palatal_implosive_voiceless">
-                <property name="label" translatable="yes">piv</property>
+                <property name="label" translatable="yes">ʄ̊</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2282,11 +2586,13 @@
               <packing>
                 <property name="left_attach">6</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="velar_implosive_voiceless">
-                <property name="label" translatable="yes">viv</property>
+                <property name="label" translatable="yes">ɠ̊</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2294,11 +2600,13 @@
               <packing>
                 <property name="left_attach">7</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="uvular_implosive_voiceless">
-                <property name="label" translatable="yes">uiv</property>
+                <property name="label" translatable="yes">ʛ̥</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2306,6 +2614,8 @@
               <packing>
                 <property name="left_attach">8</property>
                 <property name="top_attach">9</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
@@ -2485,7 +2795,7 @@
             <property name="column_homogeneous">True</property>
             <child>
               <object class="GtkButton" id="front_close_unrounded">
-                <property name="label" translatable="yes">fcu</property>
+                <property name="label" translatable="yes">i</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2493,11 +2803,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_close_rounded">
-                <property name="label" translatable="yes">fcr</property>
+                <property name="label" translatable="yes">y</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2505,11 +2817,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_close_unrounded">
-                <property name="label" translatable="yes">ccu</property>
+                <property name="label" translatable="yes">ɨ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2517,11 +2831,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_close_rounded">
-                <property name="label" translatable="yes">ccr</property>
+                <property name="label" translatable="yes">ʉ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2529,11 +2845,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_close_unrounded">
-                <property name="label" translatable="yes">bcu</property>
+                <property name="label" translatable="yes">ɯ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2541,11 +2859,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_close_rounded">
-                <property name="label" translatable="yes">bcr</property>
+                <property name="label" translatable="yes">u</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2553,11 +2873,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">0</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_nearclose_unrounded">
-                <property name="label" translatable="yes">fncu</property>
+                <property name="label" translatable="yes">ɪ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2565,11 +2887,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_nearclose_rounded">
-                <property name="label" translatable="yes">fncr</property>
+                <property name="label" translatable="yes">ʏ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2577,11 +2901,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_nearclose_unrounded">
-                <property name="label" translatable="yes">cncu</property>
+                <property name="label" translatable="yes">ɨ̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2589,11 +2915,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_nearclose_rounded">
-                <property name="label" translatable="yes">cncr</property>
+                <property name="label" translatable="yes">ʉ̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2601,11 +2929,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_nearclose_unrounded">
-                <property name="label" translatable="yes">bncu</property>
+                <property name="label" translatable="yes">ɯ̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2613,11 +2943,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_nearclose_rounded">
-                <property name="label" translatable="yes">bncr</property>
+                <property name="label" translatable="yes">ʊ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2625,11 +2957,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">1</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_closemid_unrounded">
-                <property name="label" translatable="yes">fcmu</property>
+                <property name="label" translatable="yes">e</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2637,11 +2971,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_closemid_rounded">
-                <property name="label" translatable="yes">fcmr</property>
+                <property name="label" translatable="yes">ø</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2649,11 +2985,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_closemid_unrounded">
-                <property name="label" translatable="yes">ccmu</property>
+                <property name="label" translatable="yes">ɘ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2661,11 +2999,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_closemid_rounded">
-                <property name="label" translatable="yes">ccmr</property>
+                <property name="label" translatable="yes">ɵ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2673,11 +3013,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_closemid_unrounded">
-                <property name="label" translatable="yes">bcmu</property>
+                <property name="label" translatable="yes">ɤ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2685,11 +3027,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_closemid_rounded">
-                <property name="label" translatable="yes">bcmr</property>
+                <property name="label" translatable="yes">o</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2697,11 +3041,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">2</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_mid_unrounded">
-                <property name="label" translatable="yes">fmu</property>
+                <property name="label" translatable="yes">e̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2709,11 +3055,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_mid_rounded">
-                <property name="label" translatable="yes">fmr</property>
+                <property name="label" translatable="yes">ø̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2721,11 +3069,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_mid">
-                <property name="label" translatable="yes">cm</property>
+                <property name="label" translatable="yes">ə</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2734,11 +3084,12 @@
                 <property name="left_attach">2</property>
                 <property name="top_attach">3</property>
                 <property name="width">2</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_mid_unrounded">
-                <property name="label" translatable="yes">bmu</property>
+                <property name="label" translatable="yes">ɤ̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2746,11 +3097,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_mid_rounded">
-                <property name="label" translatable="yes">bmr</property>
+                <property name="label" translatable="yes">o̞</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2758,11 +3111,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">3</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_openmid_unrounded">
-                <property name="label" translatable="yes">fomu</property>
+                <property name="label" translatable="yes">ɛ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2770,11 +3125,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_openmid_rounded">
-                <property name="label" translatable="yes">fomr</property>
+                <property name="label" translatable="yes">œ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2782,11 +3139,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_openmid_unrounded">
-                <property name="label" translatable="yes">comu</property>
+                <property name="label" translatable="yes">ɜ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2794,11 +3153,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_openmid_rounded">
-                <property name="label" translatable="yes">comr</property>
+                <property name="label" translatable="yes">ɞ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2806,11 +3167,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_openmid_unrounded">
-                <property name="label" translatable="yes">bomu</property>
+                <property name="label" translatable="yes">ʌ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2818,11 +3181,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_openmid_rounded">
-                <property name="label" translatable="yes">bomr</property>
+                <property name="label" translatable="yes">ɔ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2830,11 +3195,13 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">4</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_nearopen_unrounded">
-                <property name="label" translatable="yes">fnou</property>
+                <property name="label" translatable="yes">æ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2842,11 +3209,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">5</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_nearopen">
-                <property name="label" translatable="yes">cno</property>
+                <property name="label" translatable="yes">ɐ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2855,11 +3224,12 @@
                 <property name="left_attach">2</property>
                 <property name="top_attach">5</property>
                 <property name="width">2</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_open_unrounded">
-                <property name="label" translatable="yes">fou</property>
+                <property name="label" translatable="yes">a</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2867,11 +3237,13 @@
               <packing>
                 <property name="left_attach">0</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="front_open_rounded">
-                <property name="label" translatable="yes">for</property>
+                <property name="label" translatable="yes">ɶ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2879,11 +3251,13 @@
               <packing>
                 <property name="left_attach">1</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_open_unrounded">
-                <property name="label" translatable="yes">cou</property>
+                <property name="label" translatable="yes">ä</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2891,11 +3265,13 @@
               <packing>
                 <property name="left_attach">2</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="central_open_rounded">
-                <property name="label" translatable="yes">cor</property>
+                <property name="label" translatable="yes">ɒ̈</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2903,11 +3279,13 @@
               <packing>
                 <property name="left_attach">3</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_open_unrounded">
-                <property name="label" translatable="yes">bou</property>
+                <property name="label" translatable="yes">ɑ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2915,11 +3293,13 @@
               <packing>
                 <property name="left_attach">4</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
               <object class="GtkButton" id="back_open_rounded">
-                <property name="label" translatable="yes">bor</property>
+                <property name="label" translatable="yes">ɒ</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -2927,6 +3307,8 @@
               <packing>
                 <property name="left_attach">5</property>
                 <property name="top_attach">6</property>
+                <property name="width">1</property>
+                <property name="height">1</property>
               </packing>
             </child>
             <child>
