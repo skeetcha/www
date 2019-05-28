@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkAssistant" id="langWizard">
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkBox" id="choosePulmCon">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="choosePulmConLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Choose your Pulmonic Consonants</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="pulmConList">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="chooseNonPulmCon">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="chooseNonPulmConLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Choose your non-pulmonic consonants</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="nonPulmConList">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="chooseVowels">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="chooseVowelsLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Choose your vowels</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="vowelList">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="chooseOrthType">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="chooseOrthTypeLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Choose your orthography</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="orthTypeBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="model">orthTypes</property>
+            <child>
+              <object class="GtkCellRendererText" id="orthTypeText"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="GtkBox" id="chooseWritingSystem">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">10</property>
+        <child>
+          <object class="GtkLabel" id="chooseWritingSystemLabel">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Chhose your writing system</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="writingSystemBox">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="model">writingSystems</property>
+            <child>
+              <object class="GtkCellRendererText" id="writingSystemText"/>
+              <attributes>
+                <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <child internal-child="action_area">
+      <object class="GtkBox" id="actionArea">
+        <property name="can_focus">False</property>
+        <property name="halign">end</property>
+        <property name="spacing">6</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkListStore" id="orthTypes">
+    <columns>
+      <!-- column-name Text -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Abjad</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Abugida</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Alphabet</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Logographic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Pictographic/Ideographic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Syllabary</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Combination of Systems</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Other</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Language is not written</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="writingSystems">
+    <columns>
+      <!-- column-name Text -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Basic Latin</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Latin (Extended)</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Conscript</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Arabic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Armenian</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Brahmic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Canadian Aboriginal Syllabics</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Cuneiform</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Cyrillic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Ethiopic/Ge'ez</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Georgian</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Greek</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Hebrew</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Hangul</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">North Indic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">South Indic</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Kana/Kanji/Hanzi</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Thaana</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Hybrid of multiple scripts</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Multiple scripts used</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Other</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Language not written</col>
+      </row>
+    </data>
+  </object>
+</interface>

@@ -42,3 +42,10 @@ function ipaTable(widgetptr)
 
 	return nothing
 end
+
+function newLanguage(widgetptr)
+	push!(window.currentProject.languages, Language())
+end
+
+function newLangWizard(widgetptr)
+end

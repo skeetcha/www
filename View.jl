@@ -17,6 +17,8 @@ function getConlangView()
 	conlangView = View("language", "forms/conlangView.glade")
 
 	ipaTableId = signal_connect(ipaTable, conlangView.builder["ipaTableMi"], "activate")
+	newLangId = signal_connect(newLanguage, conlangView.builder["newLangMi"], "activate")
+	newLangWizardId = signal_connect(newLangWizard, conalangView.builder["nLWizard"], "activate")
 
 	return conlangView
 end

@@ -1,6 +1,7 @@
 mutable struct Project
-	# Put data here
+	languages
 
 	function Project()
+		languages = []
 	end
 end
